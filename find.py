@@ -46,8 +46,8 @@ for i in range(len(phones)) :
 # print(f"Phone Numbers: "+" | ".join(printPhone))
 if len(emails) > 0 and len(phones) > 0 :
     print("Copied")
-    pyperclip.copy("Phone Numbers: "+"\n".join(printPhone) + "\n"+"Emails: "+"\n".join(printEmail))
+    pyperclip.copy("Phone Numbers: "+"\n".join(printPhone) + "\n \n"+"Emails: "+"\n".join(printEmail))
 else :
     print("No Phone numbers or emails found.")
 
-# print(pyperclip.paste())
+print(pyperclip.paste())
