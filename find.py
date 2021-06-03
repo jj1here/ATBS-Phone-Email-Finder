@@ -38,9 +38,13 @@ emails = lookForEmail.findall(text)
 printEmail = []
 for i in range(len(emails)) :
     printEmail.append(emails[i][0])
-print(f"Emails: "+" | ".join(printEmail))
+# print(f"Emails: "+" | ".join(printEmail))
 
-# printPhone = []
-# for i in range(len(phones)) :
-#     printPhone.append(phones[i][0])
+printPhone = []
+for i in range(len(phones)) :
+    printPhone.append(phones[i][0])
 # print(f"Phone Numbers: "+" | ".join(printPhone))
+
+pyperclip.copy("Phone Numbers: "+" | ".join(printPhone) + "\n"+"Emails: "+" | ".join(printEmail))
+
+print(pyperclip.paste())
